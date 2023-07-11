@@ -1,0 +1,18 @@
+---
+title: "agreement_height_predicted_height"
+author: "Eric Anku"
+format: html
+---
+
+```{r load-packages}
+pacman::p_load(
+  tidyverse, # Data manipulation
+  googlesheets4, # Import dataset from google sheet
+  janitor, # Clean column names
+  skimr, # Skim dataset
+  gtsummary, # Table summaries
+  finalfit, # Column labels
+  here, # File management
+  rio # Export dataset
+```
+

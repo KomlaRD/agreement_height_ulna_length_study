@@ -21,3 +21,8 @@ pacman::p_load(
 df <- read_sheet("https://docs.google.com/spreadsheets/d/1mgVVPCekW4kCA9Ww7luuITB4sXdEI3VFg6KcK7UNFV8/edit?usp=sharing")
 ```
 
+```{r clean-names}
+# Clean names
+df <- clean_names(df)
+```
+

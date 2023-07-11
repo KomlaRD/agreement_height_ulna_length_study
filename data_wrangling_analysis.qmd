@@ -14,5 +14,10 @@ pacman::p_load(
   finalfit, # Column labels
   here, # File management
   rio # Export dataset
+)
+```
+
+```{r read-sheet}
+df <- read_sheet("https://docs.google.com/spreadsheets/d/1mgVVPCekW4kCA9Ww7luuITB4sXdEI3VFg6KcK7UNFV8/edit?usp=sharing")
 ```
 

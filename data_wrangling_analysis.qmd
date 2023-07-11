@@ -37,6 +37,14 @@ names(df)[grepl("^data_", names(df))] <- extracted_part
 ```
 
 
+```{r remove-redundant-columns}
+df <- df%>%
+  select(-c(
+    meta_instance_id,
+    date,
+    consent_form
+  ))
+```
 
 
 

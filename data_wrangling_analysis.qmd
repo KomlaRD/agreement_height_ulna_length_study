@@ -26,3 +26,17 @@ df <- read_sheet("https://docs.google.com/spreadsheets/d/1mgVVPCekW4kCA9Ww7luuIT
 df <- clean_names(df)
 ```
 
+```{r extract-column-names}
+# Extract column names starting with data_
+data_cols <- names(df)[grepl("^data_", names(df))]
+
+extracted_part <- substr(data_cols, 6, nchar(data_cols))
+
+# Replace existing column names with new extracted names
+names(df)[grepl("^data_", names(df))] <- extracted_part
+```
+
+
+
+
+

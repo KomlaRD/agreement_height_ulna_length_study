@@ -73,6 +73,16 @@ df$predicted_height <- predicted_height
 ```
 
 ```{r bland-altman-analysis}
-bland.altman <- BlandAltmanLeh(df$mean_height, df$predicted_height)
+blandr.statistics ( df$mean_height, df$predicted_height , sig.level=0.95 )
+
+# Perform Bland-Altman analysis
+bland.altman <- bland.altman.plot(df$mean_height, df$predicted_height)
+
+# Display the plot and summary statistics
+print(bland.altman)
+```
+
+```{r bland-plot}
+blandr.draw( df$mean_height , df$predicted_height )
 ```
 

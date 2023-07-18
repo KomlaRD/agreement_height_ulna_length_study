@@ -13,7 +13,8 @@ pacman::p_load(
   gtsummary, # Table summaries
   finalfit, # Column labels
   here, # File management
-  rio # Export dataset
+  rio, # Export dataset
+  BlandAltmanLeh # Bland altman analysis
 )
 ```
 

@@ -14,7 +14,7 @@ pacman::p_load(
   finalfit, # Column labels
   here, # File management
   rio, # Export dataset
-  BlandAltmanLeh # Bland altman analysis
+  blandr # Bland altman analysis
 )
 ```
 
@@ -72,4 +72,7 @@ predicted_height <- case_when(
 df$predicted_height <- predicted_height
 ```
 
+```{r bland-altman-analysis}
+bland.altman <- BlandAltmanLeh(df$mean_height, df$predicted_height)
+```
 

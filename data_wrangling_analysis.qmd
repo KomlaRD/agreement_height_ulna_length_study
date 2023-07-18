@@ -66,8 +66,9 @@ predicted_height <- case_when(
     )
 ```
 
-```{r}
-
+```{r add-predicted-height-to-df}
+# Add predicted height to dataset
+df$predicted_height <- predicted_height
 ```
 
 

@@ -50,6 +50,22 @@ df <- df%>%
   ))
 ```
 
+```{r mutate-predicted-height}
+# Mutate predicted height using Elia equation
+
+predicted_height <- case_when(
+      # Predicted height for males
+      df$gender == "male" ~ ifelse (df$age < 65, 
+                   79.2 + (3.60 * df$mean_ulna),
+                   86.3 + (3.15 * df$mean_ulna)),
+      # Predicted height for females
+      df$gender == "female" ~ ifelse (df$age < 65, 
+                     95.6 + (2.77 * df$mean_ulna),
+                     80.4 + (3.25 * df$mean_ulna)),
+      TRUE ~ NA_real_
+    )
+```
+
 ```{r}
 
 ```

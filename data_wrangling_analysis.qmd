@@ -72,6 +72,18 @@ predicted_height <- case_when(
 df$predicted_height <- predicted_height
 ```
 
+```{r skim-dataset}
+skim(df)
+```
+
+```{r summary-statistics}
+df |> 
+  tbl_summary(
+    type = all_dichotomous() ~ "categorical"
+  )
+```
+
+
 ```{r bland-altman-analysis}
 blandr.statistics ( df$mean_height, df$predicted_height , sig.level=0.95 )
 ```

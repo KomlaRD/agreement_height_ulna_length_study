@@ -74,15 +74,19 @@ df$predicted_height <- predicted_height
 
 ```{r bland-altman-analysis}
 blandr.statistics ( df$mean_height, df$predicted_height , sig.level=0.95 )
-
-# Perform Bland-Altman analysis
-bland.altman <- bland.altman.plot(df$mean_height, df$predicted_height)
-
-# Display the plot and summary statistics
-print(bland.altman)
 ```
 
 ```{r bland-plot}
 blandr.draw( df$mean_height , df$predicted_height )
+```
+
+```{r scatter-plot}
+ggplot(df, aes(mean_height, predicted_height)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+```{r correlation}
+cor.test(df$mean_height, df$predicted_height)
 ```
 

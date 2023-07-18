@@ -42,9 +42,16 @@ df <- df%>%
   select(-c(
     meta_instance_id,
     date,
-    consent_form
+    consent_form,
+    predictive_height1,
+    predictive_height2,
+    predictive_height3,
+    predictive_height4
   ))
 ```
 
+```{r}
+
+```
 
 

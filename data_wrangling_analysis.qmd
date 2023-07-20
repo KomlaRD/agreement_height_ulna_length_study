@@ -15,7 +15,7 @@ pacman::p_load(
   here, # File management
   rio, # Export dataset
   blandr, # Bland altman analysis
-  broom, # Tidy output
+  broom # Tidy output
 )
 ```
 
@@ -52,6 +52,12 @@ df <- df%>%
     predictive_height3,
     predictive_height4
   ))
+```
+
+```{r remove-wrong-entries}
+# Remove wrong entry
+df <- df |> 
+  filter(occupation != "Dietitian")
 ```
 
 ```{r mutate-predicted-height}
@@ -119,17 +125,11 @@ blandr.draw( df$predicted_height , df$mean_height )
 ```{r scatter-plot}
 ggplot(df, aes(mean_height, predicted_height)) +
   geom_point() +
-  geom_smooth(method = "lm")
+  geom_smooth(method = "lm", se = FALSE)
 ```
 
 ```{r correlation}
 cor.test(df$mean_height, df$predicted_height)
-```
-
-```{r remove-wrong-entries}
-# Remove wrong entry
-df <- df |> 
-  filter(occupation != "Dietitian")
 ```
 
 

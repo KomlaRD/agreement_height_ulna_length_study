@@ -2,6 +2,7 @@
 title: "agreement_height_predicted_height"
 author: "Eric Anku"
 format: html
+code-fold: true
 ---
 
 ```{r load-packages}
@@ -81,6 +82,27 @@ predicted_height <- case_when(
 df$predicted_height <- predicted_height
 ```
 
+```{r label-variables}
+# Label variables
+df <- df |>
+  mutate(
+    age = ff_label(age, "Age (years"),
+    gender = ff_label(gender, "Sex of participant"),
+    education = ff_label(education, "Educational status"),
+    marital_status = ff_label(marital_status, "Marital status"),
+    occupation = ff_label(occupation, "Occupation"),
+    ethnicity = ff_label(ethnicity, "Ethnicity"),
+    religion = ff_label(religion, "Religion"),
+    height_1 = ff_label(height_1, "Height one (cm)"),
+    height_2 = ff_label(height_2, "Height two (cm)"),
+    mean_height = ff_label(mean_height, "Mean height (cm)"),
+    ulna_1 = ff_label(ulna_1, "Ulna length one (cm)"),
+    ulna_2 = ff_label(ulna_2, "Ulna length two (cm)"),
+    mean_ulna = ff_label(mean_ulna, "Mean ulna length (cm)"),
+    predicted_height = ff_label(predicted_height, "Predicted height (cm)")
+  )
+```
+
 ```{r normality-test}
 # Function to perform Shapiro-Wilk test and extract p-value
 shapiro_test <- function(x) {
@@ -119,10 +141,13 @@ blandr.statistics ( df$predicted_height, df$mean_height , sig.level=0.95 )
 ```
 
 ```{r bland-plot}
+#| message: false
+#| warning: false
 blandr.draw( df$predicted_height , df$mean_height )
 ```
 
 ```{r scatter-plot}
+#| message: false
 ggplot(df, aes(mean_height, predicted_height)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)

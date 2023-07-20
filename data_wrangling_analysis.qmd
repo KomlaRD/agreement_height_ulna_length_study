@@ -15,7 +15,7 @@ pacman::p_load(
   here, # File management
   rio, # Export dataset
   blandr, # Bland altman analysis
-  broom # Tidy output
+  broom, # Tidy output
 )
 ```
 
@@ -122,5 +122,16 @@ ggplot(df, aes(mean_height, predicted_height)) +
 
 ```{r correlation}
 cor.test(df$mean_height, df$predicted_height)
+```
+
+```{r remove-wrong-entries}
+# Remove wrong entry
+df <- df |> 
+  filter(occupation != "Dietitian")
+```
+
+
+```{r export-dataset}
+
 ```
 

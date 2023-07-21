@@ -16,7 +16,8 @@ pacman::p_load(
   here, # File management
   rio, # Export dataset
   blandr, # Bland altman analysis
-  broom # Tidy output
+  broom, # Tidy output
+  GGally # Scatterplot matrix
 )
 ```
 
@@ -128,6 +129,14 @@ print(shapiro_p_values)
 skim(df)
 ```
 
+```{r scatterplot-matrix}
+#| message: false
+# Scatterplot matrix
+numeric_vars |>
+  select(age, mean_height, mean_ulna, predicted_height) |>
+  ggpairs()
+```
+
 ```{r summary-statistics}
 df |> 
   tbl_summary(
@@ -167,6 +176,9 @@ export(df, here("data", "height_agreement.sav"))
 
 # Export excel file
 export(df, here("data", "height_agreement.xlsx"))
+
+# Export RData
+export(df, here("data", "height_data.rdata"))
 ```
 
 

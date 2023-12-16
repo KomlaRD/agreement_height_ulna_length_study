@@ -26,6 +26,10 @@ pacman::p_load(
 df <- read_sheet("https://docs.google.com/spreadsheets/d/1mgVVPCekW4kCA9Ww7luuITB4sXdEI3VFg6KcK7UNFV8/edit?usp=sharing")
 ```
 
+```{r}
+df_new <- import(here("data", "test_set.csv"))
+```
+
 ```{r clean-names}
 # Clean names
 df <- clean_names(df)
@@ -105,11 +109,26 @@ local_predicted_height <- case_when(
 ```
 
 
+```{r test-predicted-height}
+# Predicted height on test data
+test_predicted_height <- case_when(
+      # Predicted height for males
+      df_new$gender == "male" ~  
+                   124.23 + (1.52 * df_new$ulna_length) - (5.42 * 0),
+      # Predicted height for females
+      df_new$gender == "female" ~ 
+                     124.23 + (1.52 * df_new$ulna_length) - (5.42 * 1),
+      TRUE ~ NA_real_
+    )
+```
+
+
 ```{r add-predicted-height-to-df}
 # Add predicted height to dataset
 df$predicted_height <- predicted_height
 df$new_predicted_height <- new_predicted_height
 df$local_predicted_height <- local_predicted_height
+df_new$test_predicted_height <- test_predicted_height
 ```
 
 ```{r label-variables}
@@ -196,11 +215,23 @@ blandr.statistics ( df$new_predicted_height, df$mean_height , sig.level=0.95 )
 blandr.statistics ( df$local_predicted_height, df$mean_height , sig.level=0.95 )
 ```
 
+```{r}
+blandr.statistics ( df_new$test_predicted_height, df_new$height , sig.level=0.95 )
+```
+
+
 ```{r bland-plot}
 #| message: false
 #| warning: false
 blandr.draw( df$predicted_height , df$mean_height )
 ```
+
+```{r}
+#| message: false
+#| warning: false
+blandr.draw( df_new$test_predicted_height , df_new$height )
+```
+
 
 ```{r}
 #| message: false
@@ -212,7 +243,7 @@ blandr.draw( df$new_predicted_height , df$mean_height )
 ```{r}
 #| message: false
 #| warning: false
-blandr.draw( df$local_predicted_height , df$mean_height )
+blandr.draw( df$mean_height , df$local_predicted_height )
 ```
 
 ```{r scatter-plot}
@@ -235,10 +266,19 @@ ggplot(df, aes(mean_height, local_predicted_height)) +
   geom_smooth(method = "lm", se = FALSE)
 ```
 
+```{r}
+#| message: false
+ggplot(df_new, aes(height, test_predicted_height)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+
 ```{r correlation}
 cor.test(df$mean_height, df$predicted_height)
 cor.test(df$mean_height, df$new_predicted_height)
 cor.test(df$mean_height, df$local_predicted_height)
+cor.test(df_new$height, df_new$test_predicted_height)
 ```
 
 

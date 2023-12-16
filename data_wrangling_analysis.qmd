@@ -135,6 +135,57 @@ df$ethnicity[df$ethnicity == "Ewe"] <- "Others" # Ewe
 df$ethnicity[df$ethnicity =="Ga"] <- "Others" # Ga
 df$ethnicity[df$ethnicity =="Guan"] <- "Others" # Guan
 df$ethnicity[df$ethnicity =="Nigerian"] <- "Others" # Nigerian
+
+### Clean occupation
+#### Define the mapping to broader categories
+occupation_mapping <- c(
+  Driver = "employed",
+  Teaching = "employed",
+  Trader = "employed",
+  Farmer = "employed",
+  Librarian = "employed",
+  "Private cleaner" = "employed",
+  Barbar = "employed",
+  "retired Teacher" = "retired",
+  "Not working" = "unemployed",
+  Student = "student",
+  Pensioner = "retired",
+  "Retired teacher" = "retired",
+  Fisherman = "employed",
+  Musician = "employed",
+  "Chopbar attendant" = "employed",
+  Nurse = "employed",
+  "Palm oil making" = "employed",
+  "Hair dresser" = "employed",
+  "Retired midwife" = "retired",
+  "Bar attendant" = "employed",
+  "Telephone receptionist" = "employed",
+  "Self-employed" = "employed",
+  "Account officer" = "employed",
+  Tailor = "employed",
+  "Self- employed" = "employed",
+  Cook = "employed",
+  Security = "employed",
+  Matron = "employed",
+  Teacher = "employed",
+  "Fashion designer" = "employed",
+  Artisan = "employed",
+  "Cold store" = "employed",
+  "Biomedical scientist" = "employed",
+  NSP = "employed",
+  "Retired Nurse" = "retired",
+  "Immigration officer" = "employed",
+  Unemployed = "unemployed",
+  Hairdresser = "employed",
+  Cleaner = "employed",
+  "Fire service officer" = "employed",
+  "Medical Doctor" = "employed",
+  Mechanic = "employed",
+  None = "unemployed" 
+)
+
+# Recode the variable in your dataframe 
+df$occupational_status <- occupation_mapping[df$occupation]
 ```
 
 
@@ -229,7 +280,7 @@ df |>
 
 # Bar chart for occupation (Cleaning note: Find unique values and recode categories)
 df |>
-  ggplot(aes(occupation)) +
+  ggplot(aes(occupational_status)) +
   geom_bar()
 
 # Bar chart for ethnicity (cleaning note: add Akan:Fante and Fante to Akan)

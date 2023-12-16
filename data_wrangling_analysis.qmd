@@ -1,11 +1,12 @@
 ---
-title: "agreement_height_predicted_height"
+title: "Agreement between standing height and height predicted from ulna length"
 author: "Eric Anku"
 format: html
 code-fold: true
 ---
 
 ```{r load-packages}
+# Load packages
 pacman::p_load(
   tidyverse, # Data manipulation
   googlesheets4, # Import dataset from google sheet
@@ -14,20 +15,16 @@ pacman::p_load(
   gtsummary, # Table summaries
   finalfit, # Column labels
   here, # File management
-  rio, # Export dataset
+  rio, # Import and Export dataset
   blandr, # Bland altman analysis
   broom, # Tidy output
   GGally # Scatterplot matrix
 )
 ```
 
-```{r read-sheet}
-# Read data from Google Sheet
-df <- read_sheet("https://docs.google.com/spreadsheets/d/1mgVVPCekW4kCA9Ww7luuITB4sXdEI3VFg6KcK7UNFV8/edit?usp=sharing")
-```
-
-```{r}
-df_new <- import(here("data", "test_set.csv"))
+```{r read-df}
+# Import dataset
+df <- import(here("data", "height_ulna.csv"))
 ```
 
 ```{r clean-names}

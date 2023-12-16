@@ -48,12 +48,16 @@ names(df)[grepl("^data_", names(df))] <- extracted_part
 df <- df%>%
   select(-c(
     meta_instance_id,
-    date,
-    consent_form,
-    predictive_height1,
-    predictive_height2,
-    predictive_height3,
-    predictive_height4
+    date, # Date of data collection
+    consent_form, # Consent form
+    predictive_height1, # Sheets calculated prediction using MUST equation
+    predictive_height2, # Sheets calculated prediction using MUST equation
+    predictive_height3, # Sheets calculated prediction using MUST equation
+    predictive_height4, # Sheets calculated prediction using MUST equation
+    height_1, # Height measurement one
+    height_2, # Height measurement two
+    ulna_1, # Ulna length measurement one
+    ulna_2 # Ulna length measurement two
   ))
 ```
 

@@ -125,6 +125,11 @@ df$religion[df$religion == "Christianity"] <-  "Christian" # Replace Christianit
 df$religion[df$religion == "Islamic"] <- "Islam" # Replace Islamic with Islam
 df$religion[df$religion == "Hindu"] <- "Others" # Replace Hindu with Others
 df$religion[df$religion == "None"] <- "Others" # Replace none with others
+
+### Clean education variable
+df$education[df$education == ""] <- NA
+
+## 
 ```
 
 

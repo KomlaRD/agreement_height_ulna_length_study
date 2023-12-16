@@ -269,6 +269,18 @@ numeric_vars |>
   ggpairs()
 ```
 
+```{r}
+# Relationship between ulna length and height by gender
+df |>
+  ggplot(aes(mean_ulna, mean_height, color = gender)) +
+  geom_point()
+
+# Relationship between age and height by gender
+df |>
+  ggplot(aes(age, mean_height, color = gender)) +
+  geom_point()
+```
+
 
 ```{r categorical-data}
 # Bar chart for gender
@@ -307,10 +319,10 @@ df |>
 ## Descriptive statistics
 
 
-```{r mutate-predicted-height}
+```{r mutate-predicted-height-elia}
 # Mutate predicted height using Elia equation
 
-predicted_height <- case_when(
+predicted_height_must <- case_when(
       # Predicted height for males
       df$gender == "male" ~ ifelse (df$age < 65, 
                    79.2 + (3.60 * df$mean_ulna),
@@ -323,9 +335,9 @@ predicted_height <- case_when(
     )
 ```
 
-```{r}
-# New predicted height
-new_predicted_height <- case_when(
+```{r mutate-predicted-height-madden}
+# Mutate predicted height using Madden equation
+predicted_height_madden <- case_when(
       # Predicted height for males
       df$gender == "male" ~  
                    85.8 + (3.14 * df$mean_ulna),
@@ -337,46 +349,13 @@ new_predicted_height <- case_when(
 ```
 
 
-```{r}
-local_predicted_height <- case_when(
-      # Predicted height for males
-      df$gender == "male" ~  
-                   124.23 + (1.52 * df$mean_ulna) - (5.42 * 0),
-      # Predicted height for females
-      df$gender == "female" ~ 
-                     124.23 + (1.52 * df$mean_ulna) - (5.42 * 1),
-      TRUE ~ NA_real_
-    )
-```
-
-
-```{r test-predicted-height}
-# Predicted height on test data
-test_predicted_height <- case_when(
-      # Predicted height for males
-      df_new$gender == "male" ~  
-                   124.23 + (1.52 * df_new$ulna_length) - (5.42 * 0),
-      # Predicted height for females
-      df_new$gender == "female" ~ 
-                     124.23 + (1.52 * df_new$ulna_length) - (5.42 * 1),
-      TRUE ~ NA_real_
-    )
-```
-
-
 ```{r add-predicted-height-to-df}
 # Add predicted height to dataset
-df$predicted_height <- predicted_height
-df$new_predicted_height <- new_predicted_height
-df$local_predicted_height <- local_predicted_height
-df_new$test_predicted_height <- test_predicted_height
+df$predicted_height_must <- predicted_height_must
+df$predicted_height_madden <- predicted_height_madden
 ```
 
 
-
-```{r scatterplot-matrix}
-
-```
 
 ```{r label-variables}
 # Label variables

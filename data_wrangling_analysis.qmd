@@ -314,6 +314,11 @@ df |>
   geom_bar()
 ```
 
+```{r remove-occupation}
+# Remove occupation 
+df <- df |>
+  select(-occupation)
+```
 
 
 ## Descriptive statistics

@@ -154,7 +154,6 @@ df |>
 
 ```{r visualise-ulna}
 # Histogram for ulna length
-# Histogram for age
 df |>
   ggplot(aes(mean_ulna)) +
   geom_histogram()
@@ -164,6 +163,42 @@ df |>
   ggplot(aes(y = mean_ulna)) +
   geom_boxplot() # There are outliers in the height data
 ```
+
+
+```{r categorical-data}
+# Bar chart for gender
+df |>
+  ggplot(aes(gender)) +
+  geom_bar()
+
+# Bar chart for education
+df |>
+  ggplot(aes(education)) +
+  geom_bar()
+
+# Bar chart for marital status
+df |>
+  ggplot(aes(marital_status)) +
+  geom_bar()
+
+# Bar chart for occupation (Cleaning: Find unique values and recode categories)
+df |>
+  ggplot(aes(occupation)) +
+  geom_bar()
+
+# Bar chart for ethnicity (cleaning: add Akan:Fante and Fante to Akan)
+df |>
+  ggplot(aes(ethnicity)) +
+  geom_bar()
+
+# Bar chart for religion (Cleaning: merge christian and christianity, islam and islamic)
+df |>
+  ggplot(aes(religion)) +
+  geom_bar()
+```
+
+
+
 
 
 ## Descriptive statistics

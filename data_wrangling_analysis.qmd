@@ -127,6 +127,12 @@ skim(df)
 ```
 
 
+```{r visualise-height}
+df |>
+  ggplot(aes(mean_height)) +
+  geom_histogram()
+```
+
 
 ## Descriptive statistics
 

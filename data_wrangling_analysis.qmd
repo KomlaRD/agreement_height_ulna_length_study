@@ -76,6 +76,23 @@ df <- df |>
 ```
 
 
+```{r label-variables}
+# Label variables
+df <- df |>
+  mutate(
+    age = ff_label(age, "Age (years"),
+    gender = ff_label(gender, "Sex of participant"),
+    education = ff_label(education, "Educational status"),
+    marital_status = ff_label(marital_status, "Marital status"),
+    occupation = ff_label(occupation, "Occupation"),
+    ethnicity = ff_label(ethnicity, "Ethnicity"),
+    religion = ff_label(religion, "Religion"),
+    mean_height = ff_label(mean_height, "Mean height (cm)"),
+    mean_ulna = ff_label(mean_ulna, "Mean ulna length (cm)")
+  )
+```
+
+
 ## Exploratory data analysis
 
 ```{r glimpse-data}
@@ -150,28 +167,6 @@ df$local_predicted_height <- local_predicted_height
 df_new$test_predicted_height <- test_predicted_height
 ```
 
-```{r label-variables}
-# Label variables
-df <- df |>
-  mutate(
-    age = ff_label(age, "Age (years"),
-    gender = ff_label(gender, "Sex of participant"),
-    education = ff_label(education, "Educational status"),
-    marital_status = ff_label(marital_status, "Marital status"),
-    occupation = ff_label(occupation, "Occupation"),
-    ethnicity = ff_label(ethnicity, "Ethnicity"),
-    religion = ff_label(religion, "Religion"),
-    height_1 = ff_label(height_1, "Height one (cm)"),
-    height_2 = ff_label(height_2, "Height two (cm)"),
-    mean_height = ff_label(mean_height, "Mean height (cm)"),
-    ulna_1 = ff_label(ulna_1, "Ulna length one (cm)"),
-    ulna_2 = ff_label(ulna_2, "Ulna length two (cm)"),
-    mean_ulna = ff_label(mean_ulna, "Mean ulna length (cm)"),
-    predicted_height = ff_label(predicted_height, "Predicted height (cm)"),
-    new_predicted_height = ff_label(new_predicted_height, "New Predicted height (cm)"),
-    local_predicted_height = ff_label(local_predicted_height, "Local Predicted height (cm)")
-  )
-```
 
 ```{r normality-test}
 # Function to perform Shapiro-Wilk test and extract p-value
@@ -205,6 +200,30 @@ numeric_vars |>
   select(age, mean_height, mean_ulna, predicted_height) |>
   ggpairs()
 ```
+
+```{r label-variables}
+# Label variables
+df <- df |>
+  mutate(
+    age = ff_label(age, "Age (years"),
+    gender = ff_label(gender, "Sex of participant"),
+    education = ff_label(education, "Educational status"),
+    marital_status = ff_label(marital_status, "Marital status"),
+    occupation = ff_label(occupation, "Occupation"),
+    ethnicity = ff_label(ethnicity, "Ethnicity"),
+    religion = ff_label(religion, "Religion"),
+    height_1 = ff_label(height_1, "Height one (cm)"),
+    height_2 = ff_label(height_2, "Height two (cm)"),
+    mean_height = ff_label(mean_height, "Mean height (cm)"),
+    ulna_1 = ff_label(ulna_1, "Ulna length one (cm)"),
+    ulna_2 = ff_label(ulna_2, "Ulna length two (cm)"),
+    mean_ulna = ff_label(mean_ulna, "Mean ulna length (cm)"),
+    predicted_height = ff_label(predicted_height, "Predicted height (cm)"),
+    new_predicted_height = ff_label(new_predicted_height, "New Predicted height (cm)"),
+    local_predicted_height = ff_label(local_predicted_height, "Local Predicted height (cm)")
+  )
+```
+
 
 ```{r summary-statistics}
 df |> 

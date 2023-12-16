@@ -78,6 +78,12 @@ df <- df |>
 
 ## Exploratory data analysis
 
+```{r glimpse-data}
+# Glimpse dataset
+df |>
+  glimpse()
+```
+
 
 ```{r mutate-predicted-height}
 # Mutate predicted height using Elia equation

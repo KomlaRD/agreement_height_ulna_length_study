@@ -120,6 +120,11 @@ for (col_name in numeric_columns) {
 df <- df[rows_to_keep, ]
 
 ## Recode variables in Religion, Ethnicity and Occupation
+### Clean religion variable
+df$religion[df$religion == "Christianity"] <-  "Christian" # Replace Christianity with Christian
+df$religion[df$religion == "Islamic"] <- "Islam" # Replace Islamic with Islam
+df$religion[df$religion == "Hindu"] <- "Others" # Replace Hindu with Others
+df$religion[df$religion == "None"] <- "Others" # Replace none with others
 ```
 
 

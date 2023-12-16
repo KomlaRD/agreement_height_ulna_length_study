@@ -93,6 +93,17 @@ df <- df |>
 ```
 
 
+```{r additional-cleaning}
+# Additional cleaning after exploration
+
+## Recode variables in Religion, Ethnicity and Occupation
+
+
+## Remove outliers from age and height
+
+```
+
+
 ## Exploratory data analysis
 
 ```{r glimpse-data}
@@ -181,23 +192,21 @@ df |>
   ggplot(aes(marital_status)) +
   geom_bar()
 
-# Bar chart for occupation (Cleaning: Find unique values and recode categories)
+# Bar chart for occupation (Cleaning note: Find unique values and recode categories)
 df |>
   ggplot(aes(occupation)) +
   geom_bar()
 
-# Bar chart for ethnicity (cleaning: add Akan:Fante and Fante to Akan)
+# Bar chart for ethnicity (cleaning note: add Akan:Fante and Fante to Akan)
 df |>
   ggplot(aes(ethnicity)) +
   geom_bar()
 
-# Bar chart for religion (Cleaning: merge christian and christianity, islam and islamic)
+# Bar chart for religion (Cleaning note: merge christian and christianity, islam and islamic)
 df |>
   ggplot(aes(religion)) +
   geom_bar()
 ```
-
-
 
 
 

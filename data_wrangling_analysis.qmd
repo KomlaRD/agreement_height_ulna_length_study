@@ -129,7 +129,12 @@ df$religion[df$religion == "None"] <- "Others" # Replace none with others
 ### Clean education variable
 df$education[df$education == ""] <- NA
 
-## 
+### Clean ethnicity
+df$ethnicity[df$ethnicity == "Akan(Fante)"] <- "Akan" # Add Akan(Fante) to Akan
+df$ethnicity[df$ethnicity == "Ewe"] <- "Others" # Ewe
+df$ethnicity[df$ethnicity =="Ga"] <- "Others" # Ga
+df$ethnicity[df$ethnicity =="Guan"] <- "Others" # Guan
+df$ethnicity[df$ethnicity =="Nigerian"] <- "Others" # Nigerian
 ```
 
 

@@ -22,10 +22,18 @@ pacman::p_load(
 )
 ```
 
+
+## Import dataset
+
+
 ```{r read-df}
 # Import dataset
 df <- import(here("data", "height_ulna.csv"))
 ```
+
+
+## Clean Dataset
+
 
 ```{r clean-names}
 # Clean names

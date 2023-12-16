@@ -128,9 +128,28 @@ skim(df)
 
 
 ```{r visualise-height}
+# Histogram for height
 df |>
   ggplot(aes(mean_height)) +
   geom_histogram()
+
+# Boxplot for height
+df |>
+  ggplot(aes(y =mean_height)) +
+  geom_boxplot() # There are outliers in the height data
+```
+
+
+```{r age-variable}
+# Histogram for age
+df |>
+  ggplot(aes(age)) +
+  geom_histogram()
+
+# Boxplot for age
+df |>
+  ggplot(aes(y = age)) +
+  geom_boxplot() # There are outliers in the height data
 ```
 
 

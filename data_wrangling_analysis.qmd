@@ -75,6 +75,10 @@ df <- df |>
   filter(occupation != "Dietitian")
 ```
 
+
+## Exploratory data analysis
+
+
 ```{r mutate-predicted-height}
 # Mutate predicted height using Elia equation
 

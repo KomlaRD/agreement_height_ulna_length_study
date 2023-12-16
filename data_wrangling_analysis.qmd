@@ -261,6 +261,14 @@ df |>
   geom_boxplot() # There are outliers in the height data
 ```
 
+```{r relationship-numeric-variables}
+#| message: false
+# Scatterplot matrix
+numeric_vars |>
+  select(age, mean_height, mean_ulna) |>
+  ggpairs()
+```
+
 
 ```{r categorical-data}
 # Bar chart for gender
@@ -367,11 +375,7 @@ df_new$test_predicted_height <- test_predicted_height
 
 
 ```{r scatterplot-matrix}
-#| message: false
-# Scatterplot matrix
-numeric_vars |>
-  select(age, mean_height, mean_ulna, predicted_height) |>
-  ggpairs()
+
 ```
 
 ```{r label-variables}

@@ -152,6 +152,19 @@ df |>
   geom_boxplot() # There are outliers in the height data
 ```
 
+```{r visualise-ulna}
+# Histogram for ulna length
+# Histogram for age
+df |>
+  ggplot(aes(mean_ulna)) +
+  geom_histogram()
+
+# Boxplot for ulna length
+df |>
+  ggplot(aes(y = mean_ulna)) +
+  geom_boxplot() # There are outliers in the height data
+```
+
 
 ## Descriptive statistics
 

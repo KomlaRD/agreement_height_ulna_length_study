@@ -429,7 +429,7 @@ blandr.statistics (df$mean_height, df$predicted_height_madden , sig.level=0.95 )
 ```{r plot-madden}
 #| message: false
 #| warning: false
-blandr.draw(df$mean_height,df$predicted_height_madden)
+blandr.draw(df$mean_height,df$predicted_height_madden, plotTitle = "Difference between Predicted height (cm) (Madden) vs Actual height (cm)")
 ```
 
 

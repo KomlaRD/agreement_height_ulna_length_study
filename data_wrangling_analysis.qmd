@@ -74,6 +74,18 @@ df <- df |>
   filter(occupation != "Dietitian")
 ```
 
+```{r remove-outlier-height}
+q1 <- quantile(df$mean_height, 0.25, na.rm = TRUE)
+q3 <- quantile(df$mean_height, 0.75, na.rm = TRUE)
+iqr <- q3 - q1
+lower_bound <- q1 - 1.5 * iqr
+upper_bound <- q3 + 1.5 * iqr
+
+# Remove outliers in height
+df <- df[df["mean_height"] >= lower_bound & df["mean_height"] <= upper_bound,]
+```
+
+
 
 ```{r additional-cleaning}
 # Additional cleaning after exploration

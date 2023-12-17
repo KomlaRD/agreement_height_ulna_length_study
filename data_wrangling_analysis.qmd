@@ -430,7 +430,7 @@ blandr.statistics (df$predicted_height_madden, df$mean_height , sig.level=0.95 )
 ```{r}
 #| message: false
 #| warning: false
-blandr.draw( df$predicted_height_madden , df_new$height )
+blandr.draw( df$predicted_height_madden , df$mean_height )
 ```
 
 

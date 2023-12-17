@@ -349,7 +349,7 @@ df <- df |>
     gender = ff_label(gender, "Sex of participant"),
     education = ff_label(education, "Educational status"),
     marital_status = ff_label(marital_status, "Marital status"),
-    occupation = ff_label(occupation, "Occupation"),
+    occupational_status = ff_label(occupational_status, "Occupational status"),
     ethnicity = ff_label(ethnicity, "Ethnicity"),
     religion = ff_label(religion, "Religion"),
     mean_height = ff_label(mean_height, "Mean height (cm)"),

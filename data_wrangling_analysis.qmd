@@ -168,22 +168,6 @@ occupation_mapping <- c(
 df$occupational_status <- occupation_mapping[df$occupation]
 ```
 
-```{r label-variables}
-# Label variables
-df <- df |>
-  mutate(
-    age = ff_label(age, "Age (years"),
-    gender = ff_label(gender, "Sex of participant"),
-    education = ff_label(education, "Educational status"),
-    marital_status = ff_label(marital_status, "Marital status"),
-    occupation = ff_label(occupation, "Occupation"),
-    ethnicity = ff_label(ethnicity, "Ethnicity"),
-    religion = ff_label(religion, "Religion"),
-    mean_height = ff_label(mean_height, "Mean height (cm)"),
-    mean_ulna = ff_label(mean_ulna, "Mean ulna length (cm)")
-  )
-```
-
 
 ## Exploratory data analysis
 
@@ -361,6 +345,15 @@ df$predicted_height_madden <- predicted_height_madden
 # Label variables
 df <- df |>
   mutate(
+    age = ff_label(age, "Age (years"),
+    gender = ff_label(gender, "Sex of participant"),
+    education = ff_label(education, "Educational status"),
+    marital_status = ff_label(marital_status, "Marital status"),
+    occupation = ff_label(occupation, "Occupation"),
+    ethnicity = ff_label(ethnicity, "Ethnicity"),
+    religion = ff_label(religion, "Religion"),
+    mean_height = ff_label(mean_height, "Mean height (cm)"),
+    mean_ulna = ff_label(mean_ulna, "Mean ulna length (cm)"),
     predicted_height_must = ff_label(predicted_height_must, "Predicted height Elia (cm)"),
     predicted_height_madden = ff_label(predicted_height_madden, "Predicted height Madden (cm)")
   )

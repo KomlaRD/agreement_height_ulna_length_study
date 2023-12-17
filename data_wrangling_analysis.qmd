@@ -9,7 +9,6 @@ code-fold: true
 # Load packages
 pacman::p_load(
   tidyverse, # Data manipulation
-  googlesheets4, # Import dataset from google sheet
   janitor, # Clean column names
   skimr, # Skim dataset
   gtsummary, # Table summaries

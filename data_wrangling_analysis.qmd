@@ -74,6 +74,17 @@ df <- df |>
   filter(occupation != "Dietitian")
 ```
 
+```{r remove-outliers-ulna-length}
+q1 <- quantile(df$mean_ulna, 0.25, na.rm = TRUE)
+q3 <- quantile(df$mean_ulna, 0.75, na.rm = TRUE)
+iqr <- q3 - q1
+upper_bound <- q3 + 1.5 * iqr
+
+# Remove outliers in height
+df <- df[df["mean_ulna"] < upper_bound,]
+```
+
+
 ```{r remove-outlier-height}
 q1 <- quantile(df$mean_height, 0.25, na.rm = TRUE)
 q3 <- quantile(df$mean_height, 0.75, na.rm = TRUE)
@@ -83,17 +94,6 @@ upper_bound <- q3 + 1.5 * iqr
 
 # Remove outliers in height
 df <- df[df["mean_height"] > lower_bound & df["mean_height"] < upper_bound,]
-```
-
-
-```{r remove-outliers-ulna-length}
-q1 <- quantile(df$mean_ulna, 0.25, na.rm = TRUE)
-q3 <- quantile(df$mean_ulna, 0.75, na.rm = TRUE)
-iqr <- q3 - q1
-upper_bound <- q3 + 1.5 * iqr
-
-# Remove outliers in height
-df <- df[df["mean_ulna"] < upper_bound,]
 ```
 
 
@@ -214,7 +214,6 @@ df |>
   ggplot(aes(y = mean_height)) +
   geom_boxplot() # There are outliers in the height data
 ```
-
 
 ```{r age-variable}
 # Histogram for age

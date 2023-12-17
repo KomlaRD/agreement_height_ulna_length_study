@@ -414,7 +414,7 @@ blandr.statistics (df$mean_height,df$predicted_height_must, sig.level=0.95 )
 ```{r bland-plot}
 #| message: false
 #| warning: false
-blandr.draw(df$mean_height,df$predicted_height_must)
+blandr.draw(df$mean_height,df$predicted_height_must, plotTitle = "Difference between Predicted height (cm) (MUST) vs Actual height (cm)")
 ```
 
 

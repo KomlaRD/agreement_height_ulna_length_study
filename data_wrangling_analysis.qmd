@@ -324,10 +324,10 @@ predicted_height_must <- case_when(
 predicted_height_madden <- case_when(
       # Predicted height for males
       df$gender == "male" ~  
-                   85.8 + (3.14 * df$mean_ulna),
+                   83.09 + (3.14 * df$mean_ulna),
       # Predicted height for females
       df$gender == "female" ~ 
-                     79.55 + (3.14 * df$mean_ulna),
+                     76.84 + (3.14 * df$mean_ulna),
       TRUE ~ NA_real_
     )
 ```

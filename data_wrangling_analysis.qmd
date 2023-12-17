@@ -82,37 +82,22 @@ lower_bound <- q1 - 1.5 * iqr
 upper_bound <- q3 + 1.5 * iqr
 
 # Remove outliers in height
-df <- df[df["mean_height"] >= lower_bound & df["mean_height"] <= upper_bound,]
+df <- df[df["mean_height"] > lower_bound & df["mean_height"] < upper_bound,]
 ```
 
 
+```{r remove-outliers-ulna-length}
+q1 <- quantile(df$mean_ulna, 0.25, na.rm = TRUE)
+q3 <- quantile(df$mean_ulna, 0.75, na.rm = TRUE)
+iqr <- q3 - q1
+upper_bound <- q3 + 1.5 * iqr
+
+# Remove outliers in height
+df <- df[df["mean_ulna"] < upper_bound,]
+```
+
 
 ```{r additional-cleaning}
-# Additional cleaning after exploration
-
-## Remove outliers from age and height (Note: Run this twice to remove outliers in height completely)
-### List of column names to process for outlier removal
-numeric_columns <- c("age", "mean_height", "mean_ulna")
-
-### Create a logical vector indicating rows to keep
-rows_to_keep <- rep(TRUE, nrow(df))
-
-for (col_name in numeric_columns) {
-  data <- df[[col_name]]
-  
-  q1 <- quantile(data, 0.25, na.rm = TRUE)
-  q3 <- quantile(data, 0.75, na.rm = TRUE)
-  iqr <- q3 - q1
-  lower_bound <- q1 - 1.5 * iqr
-  upper_bound <- q3 + 1.5 * iqr
-  
-  #### Update the rows_to_keep vector to exclude outliers
-  rows_to_keep <- rows_to_keep & (data >= lower_bound & data <= upper_bound)
-}
-
-### Filter the dataframe
-df <- df[rows_to_keep, ]
-
 ## Recode variables in Religion, Ethnicity and Occupation
 ### Clean religion variable
 df$religion[df$religion == "Christianity"] <-  "Christian" # Replace Christianity with Christian

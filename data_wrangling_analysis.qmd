@@ -344,7 +344,7 @@ df$predicted_height_madden <- predicted_height_madden
 # Label variables
 df <- df |>
   mutate(
-    age = ff_label(age, "Age (years"),
+    age = ff_label(age, "Age (years)"),
     gender = ff_label(gender, "Sex of participant"),
     education = ff_label(education, "Educational status"),
     marital_status = ff_label(marital_status, "Marital status"),
@@ -387,7 +387,8 @@ df |>
   tbl_summary(
     by = gender,
     type = all_dichotomous() ~ "categorical"
-  )
+  ) |> add_p() |>
+  bold_p()
 ```
 
 

@@ -421,6 +421,13 @@ blandr.statistics (df$mean_height, df$predicted_height_madden , sig.level=0.95 )
 blandr.draw(df$mean_height,df$predicted_height_madden, plotTitle = "Difference between Predicted height (cm) (Madden) vs Actual height (cm)")
 ```
 
+```{r data-for-ml, eval=FALSE}
+height_ml <- df |>
+  select(age, gender, mean_ulna, mean_height)
+
+export(height_ml, here("data", "height_prediction.csv"))
+```
+
 
 
 ```{r export-dataset}

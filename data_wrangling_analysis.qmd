@@ -441,6 +441,9 @@ height_metrics <- function(actual_height, predicted_height){
 ```{r eval-must-predictions}
 height_metrics(df$mean_height, df$predicted_height_must)
 ```
+```{r eval-madden-predictons}
+height_metrics(df$mean_height, df$predicted_height_madden)
+```
 
 
 ```{r data-for-ml, eval=FALSE}

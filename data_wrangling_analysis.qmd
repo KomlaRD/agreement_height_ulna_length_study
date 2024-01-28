@@ -422,6 +422,23 @@ blandr.statistics (df$mean_height, df$predicted_height_madden , sig.level=0.95 )
 blandr.draw(df$mean_height,df$predicted_height_madden, plotTitle = "Difference between Predicted height (cm) (Madden) vs Actual height (cm)")
 ```
 
+```{r metrics-function}
+# Function to evaluate model predictions
+height_metrics <- function(actual_height, predicted_height){
+  # Mean absolute error
+  mae_eval <- mae(actual_height, predicted_height)
+  
+  # Mean squared error
+  mse_eval <- mse(actual_height, predicted_height)
+  
+  # Root mean squared error
+  rmse_eval <- rmse(actual_height, predicted_height)
+  
+  return(c(mae_eval, mse_eval, rmse_eval))
+}
+```
+
+
 ```{r data-for-ml, eval=FALSE}
 height_ml <- df |>
   select(age, gender, mean_ulna, mean_height)

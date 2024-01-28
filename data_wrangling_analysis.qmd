@@ -17,7 +17,8 @@ pacman::p_load(
   rio, # Import and Export dataset
   blandr, # Bland altman analysis
   broom, # Tidy output
-  GGally # Scatterplot matrix
+  GGally, # Scatterplot matrix
+  Metrics # Metrics for model evaluation
 )
 ```
 

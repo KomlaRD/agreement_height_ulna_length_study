@@ -18,7 +18,8 @@ pacman::p_load(
   blandr, # Bland altman analysis
   broom, # Tidy output
   GGally, # Scatterplot matrix
-  Metrics # Metrics for model evaluation
+  Metrics, # Metrics for model evaluation
+  performance # Assessment of regression model performance
 )
 ```
 
@@ -439,10 +440,10 @@ height_metrics <- function(actual_height, predicted_height){
 ```
 
 ```{r eval-must-predictions}
-height_metrics(df$mean_height, df$predicted_height_must)
+height_metrics(df$mean_height, df$predicted_height_must) # mae, mse, rmse
 ```
 ```{r eval-madden-predictons}
-height_metrics(df$mean_height, df$predicted_height_madden)
+height_metrics(df$mean_height, df$predicted_height_madden) # mae, mse, rmse
 ```
 
 
@@ -453,6 +454,21 @@ height_ml <- df |>
 export(height_ml, here("data", "height_prediction.csv"))
 ```
 
+```{r linear-models}
+model1 <- lm(mean_height ~ mean_ulna, data = height_ml)
+model2 <- lm(mean_height ~ mean_ulna + gender, data = height_ml)
+model3 <- lm(mean_height ~ mean_ulna + gender + age, data = height_ml)
+```
+
+```{r summary-models}
+summary(model1)
+summary(model2)
+summary(model3)
+```
+
+```{r}
+check_model(model3)
+```
 
 
 ```{r export-dataset}

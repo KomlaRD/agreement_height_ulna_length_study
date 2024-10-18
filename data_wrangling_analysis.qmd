@@ -32,6 +32,7 @@ pacman::p_load(
 df1 <- import(here("data", "height_ulna.csv")) # 1st dataset
 df2 <- import(here("data", "height_data.csv")) # Second dataset
 ```
+
 ```{r select-relevant-fields}
 # Select relevant fields from second half of the data
 df2 <- df2 |>
@@ -73,6 +74,16 @@ df2 <- df2 |>
 colnames(df2)[which(names(df2) == "occupation")] <- "occupational_status"
 ```
 
+```{r remove-fields-df1}
+# Remove columns from df1 to align variable length with df2
+df1 <- df1 |>
+  select(-c(
+    occupation,
+    predicted_height_madden,
+    predicted_height_must
+  )
+  )
+```
 
 
 

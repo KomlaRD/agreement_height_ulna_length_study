@@ -29,7 +29,11 @@ pacman::p_load(
 
 ```{r read-df}
 # Import dataset
-df <- import(here("data", "height_ulna.csv"))
+df1 <- import(here("data", "height_ulna.csv"))
+df2 <- import(here("data", "height_data.csv"))
+```
+```{r select-relevant-fields}
+
 ```
 
 

@@ -33,6 +33,10 @@ df1 <- import(here("data", "height_ulna.csv")) # 1st dataset
 df2 <- import(here("data", "height_data.csv")) # Second dataset
 ```
 
+
+## Data wrangling
+
+
 ```{r select-relevant-fields}
 # Select relevant fields from second half of the data
 df2 <- df2 |>
@@ -231,12 +235,6 @@ df |>
   geom_bar()
 ```
 
-```{r remove-occupation}
-# Remove occupation 
-df <- df |>
-  select(-occupation)
-```
-
 
 ## Descriptive statistics
 
@@ -247,11 +245,11 @@ df <- df |>
 
 predicted_height_must <- case_when(
       # Predicted height for males
-      df$gender == "male" ~ ifelse (df$age < 65, 
+      df$gender == "Male" ~ ifelse (df$age < 65, 
                    79.2 + (3.60 * df$mean_ulna),
                    86.3 + (3.15 * df$mean_ulna)),
       # Predicted height for females
-      df$gender == "female" ~ ifelse (df$age < 65, 
+      df$gender == "Female" ~ ifelse (df$age < 65, 
                      95.6 + (2.77 * df$mean_ulna),
                      80.4 + (3.25 * df$mean_ulna)),
       TRUE ~ NA_real_
@@ -262,10 +260,10 @@ predicted_height_must <- case_when(
 # Mutate predicted height using Madden equation
 predicted_height_madden <- case_when(
       # Predicted height for males
-      df$gender == "male" ~  
+      df$gender == "Male" ~  
                    83.09 + (3.14 * df$mean_ulna),
       # Predicted height for females
-      df$gender == "female" ~ 
+      df$gender == "Female" ~ 
                      76.84 + (3.14 * df$mean_ulna),
       TRUE ~ NA_real_
     )

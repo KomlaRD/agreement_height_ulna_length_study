@@ -29,12 +29,12 @@ pacman::p_load(
 
 ```{r read-df}
 # Import dataset
-df1 <- import(here("data", "height_ulna.csv"))
-df2 <- import(here("data", "height_data.csv"))
+df1 <- import(here("data", "height_ulna.csv")) # 1st dataset
+df2 <- import(here("data", "height_data.csv")) # Second dataset
 ```
 ```{r select-relevant-fields}
 # Select relevant fields from second half of the data
-df2 |>
+df2 <- df2 |>
   select(
     age, # Age of participants
     gender, # Sex participants
@@ -48,6 +48,29 @@ df2 |>
     ulna_length_one, # Ulna length one
     ulna_length_two # Ulna length two
   )
+```
+
+```{r mutate-variables-df2}
+df2 <- df2 |>
+  mutate(
+    mean_height = (height_one + height_two) / 2,
+    mean_ulna = (ulna_length_one + ulna_length_two) / 2
+  )
+```
+
+```{r remove-redundant-columns}
+df2 <- df2 |>
+  select(-c(
+    height_one,
+    height_two,
+    ulna_length_one,
+    ulna_length_two
+  ))
+```
+
+```{r change_column_name}
+# Change occupation to occupational_status
+colnames(df2)[which(names(df2) == "occupation")] <- "occupational_status"
 ```
 
 

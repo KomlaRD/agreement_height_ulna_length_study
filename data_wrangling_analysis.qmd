@@ -85,12 +85,21 @@ df1 <- df1 |>
   )
 ```
 
+```{r change-cases}
+df1$gender <- str_to_sentence(df1$gender) # Convert df1$gender to sentence case
+df1$marital_status <- str_to_sentence(df1$marital_status) # Convert df1$marital_status to sentence case
+df1$occupational_status <- str_to_sentence(df1$occupational_status) # Convert educational status to sentence case
 
+# Convert education levels into upper case or sentence case 
+df1$education[df1$education == "jhs"] <- "JHS"
+df1$education[df1$education == "shs"] <- "SHS"
+df1$education[df1$education == "primary"] <- "Primary"
+df1$education[df1$education == "higher"] <- "Higher"
+df1$education[df1$education == "none"] <- "None"
 
-```{r remove-wrong-entries}
-# Remove wrong entry
-df <- df |> 
-  filter(occupation != "Dietitian")
+# Change `Other` to `Others` for ethnicity and religion (df2)
+df2$religion[df2$religion == "Other"] <- "Others"
+df2$ethnicity[df2$ethnicity == "Other"] <- "Others"
 ```
 
 ```{r remove-outliers-ulna-length}

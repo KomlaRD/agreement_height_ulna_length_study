@@ -33,7 +33,21 @@ df1 <- import(here("data", "height_ulna.csv"))
 df2 <- import(here("data", "height_data.csv"))
 ```
 ```{r select-relevant-fields}
-
+# Select relevant fields from second half of the data
+df2 |>
+  select(
+    age, # Age of participants
+    gender, # Sex participants
+    education, # Education of participants
+    marital_status, # Marital status
+    occupation, # Occupational status
+    ethnicity,# Ethnicity
+    religion, # Religion
+    height_one, # Height measurement one
+    height_two, # Height measurement two
+    ulna_length_one, # Ulna length one
+    ulna_length_two # Ulna length two
+  )
 ```
 
 

@@ -19,7 +19,10 @@ pacman::p_load(
   broom, # Tidy output
   GGally, # Scatterplot matrix
   Metrics, # Metrics for model evaluation
-  performance # Assessment of regression model performance
+  performance, # Assessment of regression model performance
+  DataExplorer, # EDA
+  SmartEDA, # EDA
+  explore # Simplified EDA in shiny
 )
 ```
 
@@ -149,6 +152,17 @@ skim(df)
 # Remove 2 individuals with missing age
 df <- df |>
   na.omit()
+```
+
+```{r create-eda-report}
+create_report(df, report_title = "Height Prediction Report")
+```
+```{r smart-eda}
+ExpReport(df, op_file="Smart EDA Report")
+```
+
+```{r shiny-explore}
+df |> explore()
 ```
 
 

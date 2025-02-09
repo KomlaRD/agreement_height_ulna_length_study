@@ -145,7 +145,12 @@ print(shapiro_p_values)
 skim(df)
 ```
 
-git 
+```{r remove-missing} 
+# Remove 2 individuals with missing age
+df <- df |>
+  na.omit()
+```
+
 
 ## Descriptive statistics
 

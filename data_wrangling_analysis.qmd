@@ -145,7 +145,7 @@ print(shapiro_p_values)
 skim(df)
 ```
 
-
+git 
 
 ## Descriptive statistics
 
@@ -288,6 +288,7 @@ height_metrics <- function(actual_height, predicted_height){
 ```{r eval-must-predictions}
 height_metrics(df$mean_height, df$predicted_height_must) # mae, mse, rmse
 ```
+
 ```{r eval-madden-predictons}
 height_metrics(df$mean_height, df$predicted_height_madden) # mae, mse, rmse
 ```
@@ -312,7 +313,9 @@ summary(model2)
 summary(model3)
 ```
 
-```{r}
+```{r check-models}
+check_model(model1)
+check_model(model2)
 check_model(model3)
 ```
 

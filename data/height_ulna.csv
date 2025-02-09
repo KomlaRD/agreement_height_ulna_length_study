@@ -1,0 +1,385 @@
+age,gender,education,marital_status,occupation,ethnicity,religion,mean_height,mean_ulna,occupational_status,predicted_height_must,predicted_height_madden
+51,male,jhs,married,Driver,Akan,Others,164.3,29,employed,183.6,174.15
+53,male,higher,married,Teaching,Akan,Islam,168.1,29,employed,183.6,174.15
+69,female,jhs,single,Trader,Akan,Christian,161,24,employed,158.4,152.2
+57,male,jhs,married,Farmer,Akan,Christian,164.1,29,employed,183.6,174.15
+66,male,higher,married,Librarian,Akan,Christian,171,31,employed,183.95,180.43
+80,female,,widowed,None,Akan,Christian,159.9,28,unemployed,171.4,164.76
+50,female,,widowed,Farmer,Akan,Christian,161.1,27,employed,170.39,161.62
+75,female,higher,widowed,retired Teacher,Akan,Christian,161,29,retired,174.65,167.9
+54,female,,married,Private cleaner,Akan,Christian,159.8,28,employed,173.16,164.76
+50,female,primary,divorced,Not working,Akan,Christian,157.6,26.5,unemployed,169.005,160.05
+70,female,shs,divorced,Not working,Akan,Christian,154.2,26,unemployed,164.9,158.48
+69,female,primary,married,Trader,Akan,Christian,165,28,employed,171.4,164.76
+21,male,shs,single,Barbar,Akan,Islam,177.1,31,employed,190.8,180.43
+62,female,shs,married,Trader,Akan,Christian,162,28,employed,173.16,164.76
+55,female,shs,married,Trader,Akan,Christian,161,27,employed,170.39,161.62
+47,female,shs,divorced,Not working,Akan,Christian,150.4,24,unemployed,162.08,152.2
+25,female,higher,single,Student,Akan,Christian,164,28.5,student,174.545,166.33
+75,male,higher,married,Pensioner,Others,Christian,171,28,retired,174.5,171.01
+65,male,shs,married,Driver,Akan,Christian,166.5,28.5,employed,176.075,172.58
+87,male,higher,married,Retired teacher,Akan,Christian,168.7,27.5,retired,172.925,169.44
+31,male,primary,married,Fisherman,Akan,Christian,168.5,31,employed,190.8,180.43
+18,female,shs,single,Student,Akan,Christian,155.1,24,student,162.08,152.2
+28,male,higher,single,Student,Akan,Christian,166.3,28,student,180,171.01
+30,male,higher,single,Musician,Akan,Christian,172.1,29,employed,183.6,174.15
+19,male,shs,single,Student,Akan,Christian,164.3,27,student,176.4,167.87
+42,female,jhs,single,Chopbar attendant,Akan,Christian,161.9,27,employed,170.39,161.62
+35,female,higher,married,Nurse,Akan,Christian,158,26.5,employed,169.005,160.05
+34,male,jhs,single,Barbar,Akan,Christian,182,30,employed,187.2,177.29
+37,female,higher,married,Teaching,Akan,Christian,158.9,27.5,employed,171.775,163.19
+49,male,jhs,divorced,Barbar,Akan,Islam,166,27.8,employed,179.28,170.382
+59,female,shs,widowed,Trader,Akan,Christian,158,26.4,employed,168.728,159.736
+82,female,none,divorced,Not working,Akan,Christian,159.5,26.5,unemployed,166.525,160.05
+51,female,jhs,married,Palm oil making,Akan,Christian,160,25.5,employed,166.235,156.91
+62,female,shs,married,Not working,Akan,Christian,161.1,27,unemployed,170.39,161.62
+63,male,shs,married,Trader,Akan,Christian,172,30.2,employed,187.92,177.918
+62,female,none,married,Not working,Akan,Islam,152,27,unemployed,170.39,161.62
+52,female,shs,married,Trader,Akan,Christian,151.5,27.5,employed,171.775,163.19
+75,female,higher,widowed,Pensioneer,Akan,Christian,154,25,,161.65,155.34
+58,female,none,married,Farmer,Akan,Christian,154,26.4,employed,168.728,159.736
+36,female,primary,divorced,Hair dresser,Akan,Christian,153,25,employed,164.85,155.34
+68,female,higher,married,Retired midwife,Akan,Christian,158,28,retired,171.4,164.76
+41,female,shs,married,Trader,Akan,Christian,158,26.5,employed,169.005,160.05
+47,female,none,married,Trader,Akan,Christian,159,28,employed,173.16,164.76
+57,female,shs,married,Trader,Akan,Christian,157,26,employed,167.62,158.48
+55,male,jhs,married,Driver,Akan,Christian,172,30,employed,187.2,177.29
+56,female,primary,divorced,Bar attendant,Akan,Christian,154,25.5,employed,166.235,156.91
+71,female,primary,divorced,Trader,Akan,Christian,156.6,26,employed,164.9,158.48
+66,male,none,married,Farmer,Akan,Christian,161,27,employed,171.35,167.87
+78,female,shs,widowed,Telephone receptionist,Akan,Christian,159.3,29,employed,174.65,167.9
+60,male,higher,married,Teaching,Akan,Christian,168,28,employed,180,171.01
+82,female,none,divorced,Not working,Akan,Christian,155.7,26.5,unemployed,166.525,160.05
+77,female,higher,divorced,Teaching,Akan,Christian,157.9,26,employed,164.9,158.48
+56,female,none,single,Trader,Akan,Christian,158.6,28,employed,173.16,164.76
+70,female,shs,widowed,Trader,Akan,Christian,167.7,29.5,employed,176.275,169.47
+60,female,higher,married,Pensioner,Akan,Christian,164.3,32,retired,184.24,177.32
+55,female,none,married,Not working,Akan,Christian,156.7,28,unemployed,173.16,164.76
+56,female,primary,divorced,Trader,Akan,Christian,161.5,28.5,employed,174.545,166.33
+54,male,jhs,married,Farmer,Akan,Christian,166,29,employed,183.6,174.15
+57,female,none,married,Trader,Akan,Christian,161,29,employed,175.93,167.9
+20,female,jhs,single,Self-employed,Akan,Christian,164.3,26,employed,167.62,158.48
+61,female,shs,widowed,Farmer,Akan,Christian,154.2,25.5,employed,166.235,156.91
+60,female,jhs,married,Not working,Akan,Christian,165.2,30,unemployed,178.7,171.04
+59,female,none,widowed,Farmer,Akan,Christian,155.3,27,employed,170.39,161.62
+24,female,higher,single,Student,Akan,Christian,160.3,28,student,173.16,164.76
+58,male,higher,married,Account officer,Akan,Christian,177.6,29,employed,183.6,174.15
+31,female,jhs,married,Tailor,Akan,Christian,159,25,employed,164.85,155.34
+50,male,jhs,married,Farmer,Akan,Christian,173.1,30,employed,187.2,177.29
+49,male,higher,married,Teaching,Others,Christian,172.4,29,employed,183.6,174.15
+46,female,primary,married,Not working,Akan,Christian,148.8,28,unemployed,173.16,164.76
+70,female,shs,divorced,Trader,Akan,Christian,163.7,27,employed,168.15,161.62
+24,female,jhs,single,Self- employed,Akan,Christian,165.9,28,employed,173.16,164.76
+48,female,primary,divorced,Farmer,Akan,Christian,160.2,28,employed,173.16,164.76
+31,male,higher,single,Teaching,Akan,Christian,187.6,31,employed,190.8,180.43
+59,female,shs,married,Farmer,Akan,Christian,160,28,employed,173.16,164.76
+24,female,shs,single,Tailor,Akan,Christian,153,25,employed,164.85,155.34
+40,female,jhs,married,Trader,Akan,Christian,163.7,27.5,employed,171.775,163.19
+18,male,shs,single,Student,Akan,Christian,178.7,30,student,187.2,177.29
+43,female,jhs,married,Trader,Akan,Christian,157.8,27,employed,170.39,161.62
+42,female,higher,single,Self-employed,Akan,Christian,162.1,25.5,employed,166.235,156.91
+59,female,none,married,Farmer,Akan,Christian,164,27,employed,170.39,161.62
+33,female,shs,single,Trader,Akan,Christian,156.3,27,employed,170.39,161.62
+37,male,shs,single,Self-employed,Akan,Islam,173.4,28,employed,180,171.01
+44,male,shs,married,Trader,Akan,Christian,185.1,32,employed,194.4,183.57
+28,male,shs,single,Nurse,Akan,Christian,165.4,28.3,employed,181.08,171.952
+54,female,jhs,widowed,Cook,Akan,Christian,162.9,28.2,employed,173.714,165.388
+50,female,jhs,married,Tailor,Akan,Christian,160.2,28,employed,173.16,164.76
+21,female,higher,single,Student,Akan,Christian,160.2,26.5,student,169.005,160.05
+66,female,shs,married,Farmer,Akan,Christian,152.1,27,employed,168.15,161.62
+20,female,shs,single,Student,Akan,Christian,165.4,29.5,student,177.315,169.47
+46,female,none,married,Farmer,Akan,Christian,169.6,30.5,employed,180.085,172.61
+42,male,higher,married,Teaching,Akan,Christian,174.6,30.1,employed,187.56,177.604
+22,male,shs,single,Student,Akan,Others,170.9,28,student,180,171.01
+28,female,higher,single,Nurse,Akan,Christian,177,30.2,employed,179.254,171.668
+29,female,higher,single,Self-employed,Akan,Christian,153.6,26.5,employed,169.005,160.05
+20,male,shs,single,Self-employed,Akan,Christian,177,31.5,employed,192.6,182
+36,male,higher,married,Electrical Technician,Others,Christian,182.5,31,,190.8,180.43
+19,male,shs,single,Student,Akan,Christian,171.4,29.5,student,185.4,175.72
+35,male,higher,single,Nurse,Akan,Christian,168,30.5,employed,189,178.86
+68,male,shs,married,Pensioner,Others,Christian,169.4,28.5,retired,176.075,172.58
+65,female,shs,divorced,Trader,Akan,Christian,154.3,26,employed,164.9,158.48
+68,female,shs,married,Pensioner,Akan,Islam,162.9,28,retired,171.4,164.76
+66,male,higher,married,Pensioner,Akan,Christian,178,31.5,retired,185.525,182
+55,female,none,single,Trader,Akan,Christian,165.5,31.8,employed,183.686,176.692
+72,female,higher,married,Pensioner,Akan,Christian,160,27,retired,168.15,161.62
+60,female,none,widowed,Trader,Akan,Christian,159,26.4,employed,168.728,159.736
+41,female,jhs,married,Trader,Akan,Islam,158.7,28.2,employed,173.714,165.388
+69,female,shs,widowed,Trader,Akan,Christian,169.5,28,employed,171.4,164.76
+67,male,shs,married,Security,Akan,Christian,164.5,27,employed,171.35,167.87
+63,female,shs,divorced,Trader,Akan,Christian,154,24.5,employed,163.465,153.77
+67,female,none,married,Not working,Akan,Christian,156,26.5,unemployed,166.525,160.05
+56,female,higher,married,Matron,Akan,Christian,166.7,31.5,employed,182.855,175.75
+68,male,higher,married,Farmer,Akan,Christian,174,29.9,employed,180.485,176.976
+73,male,higher,married,Pensioner,Akan,Christian,167.4,28.5,retired,176.075,172.58
+50,female,shs,married,Trader,Akan,Christian,163.5,27,employed,170.39,161.62
+70,female,primary,widowed,Not working,Akan,Christian,160.1,29.5,unemployed,176.275,169.47
+56,female,none,married,Farmer,Akan,Christian,159.5,29.2,employed,176.484,168.528
+71,male,higher,married,Pensioner,Akan,Christian,165.7,30,retired,180.8,177.29
+32,female,jhs,married,Self-employed,Akan,Christian,159.8,27.5,employed,171.775,163.19
+82,male,shs,married,Pensioner,Akan,Christian,162,27,retired,171.35,167.87
+68,male,shs,married,Farmer,Akan,Christian,167.2,29.5,employed,179.225,175.72
+78,female,none,widowed,Trader,Akan,Christian,163,30.5,employed,179.525,172.61
+65,female,shs,widowed,Tailor,Akan,Christian,169.4,29,employed,174.65,167.9
+72,female,jhs,widowed,Not working,Akan,Christian,155.5,27,unemployed,168.15,161.62
+71,male,jhs,married,Self-employed,Akan,Christian,166,30,employed,180.8,177.29
+70,female,higher,married,Pensioner,Akan,Christian,153,25.7,retired,163.925,157.538
+68,female,none,married,Trader,Akan,Christian,153.8,27,employed,168.15,161.62
+73,female,higher,married,Pensioner,Akan,Christian,171.3,32,retired,184.4,177.32
+66,female,shs,widowed,Trader,Akan,Christian,153.8,26.5,employed,166.525,160.05
+39,female,none,married,Trader,Akan,Christian,168.5,30.5,employed,180.085,172.61
+65,female,shs,married,Farmer,Akan,Christian,161.9,27,employed,168.15,161.62
+53,female,higher,married,Teacher,Akan,Christian,156,27.5,employed,171.775,163.19
+80,female,none,widowed,Not working,Akan,Christian,157.8,28,unemployed,171.4,164.76
+80,female,none,widowed,Not working,Akan,Christian,157.8,28,unemployed,171.4,164.76
+58,female,higher,married,Teacher,Akan,Christian,158.1,27.5,employed,171.775,163.19
+58,female,shs,divorced,Not working,Akan,Christian,151,27.8,unemployed,172.606,164.132
+50,female,shs,married,Trader,Akan,Christian,160.5,28,employed,173.16,164.76
+60,male,primary,married,Farmer,Akan,Christian,166,27.7,employed,178.92,170.068
+62,female,none,married,Not working,Akan,Christian,162.5,27.5,unemployed,171.775,163.19
+55,female,none,married,Farmer,Akan,Christian,162.9,27,employed,170.39,161.62
+65,female,shs,married,Tailor,Akan,Christian,156.5,28,employed,171.4,164.76
+60,female,none,married,Not working,Others,Islam,163.5,28,unemployed,173.16,164.76
+56,female,none,married,Farmer,Akan,Christian,153,24.5,employed,163.465,153.77
+61,female,jhs,married,Trader,Akan,Christian,146,25.5,employed,166.235,156.91
+64,female,higher,married,Trader,Akan,Christian,160,27,employed,170.39,161.62
+53,female,none,married,Trader,Akan,Christian,152,25,employed,164.85,155.34
+30,male,shs,single,Trader,Others,Christian,169.4,29.5,employed,185.4,175.72
+30,male,shs,single,Driver,Akan,Christian,179.5,30.5,employed,189,178.86
+30,female,higher,married,Nurse,Akan,Christian,152.1,27,employed,170.39,161.62
+51,female,jhs,divorced,Farmer,Akan,Christian,160.9,26.5,employed,169.005,160.05
+60,male,shs,married,Pensioner,Akan,Christian,170.3,28.3,retired,181.08,171.952
+50,female,shs,married,Trader,Akan,Christian,145.7,23.3,employed,160.141,150.002
+22,female,higher,single,Student,Akan,Christian,166.2,29,student,175.93,167.9
+66,female,none,divorced,Farmer,Akan,Christian,159,24,employed,158.4,152.2
+22,male,shs,single,Student,Akan,Christian,161.1,28.5,student,181.8,172.58
+54,female,shs,married,Tailor,Akan,Christian,155,26,employed,167.62,158.48
+59,male,shs,married,Tour guide,Akan,Christian,183.9,31,,190.8,180.43
+31,female,shs,single,Fashion designer,Akan,Christian,156.9,26.5,employed,169.005,160.05
+21,male,shs,single,Student,Akan,Christian,184.5,34.5,student,203.4,191.42
+54,male,none,married,Fisherman,Akan,Christian,186,31,employed,190.8,180.43
+54,female,jhs,married,Trader,Akan,Islam,160,25.5,employed,166.235,156.91
+23,female,higher,single,Student,Akan,Christian,151,24.5,student,163.465,153.77
+51,female,primary,married,Farmer,Akan,Christian,163,26.5,employed,169.005,160.05
+60,female,none,widowed,Trader,Akan,Christian,150,25,employed,164.85,155.34
+53,female,jhs,divorced,Not working,Akan,Christian,155.9,25.5,unemployed,166.235,156.91
+55,male,higher,divorced,Artisan,Akan,Christian,175.1,31.5,employed,192.6,182
+52,female,none,married,Trader,Akan,Christian,156.5,26,employed,167.62,158.48
+25,female,higher,single,Nurse,Akan,Christian,158.5,26.5,employed,169.005,160.05
+85,female,higher,widowed,Not working,Akan,Christian,160,28,unemployed,171.4,164.76
+67,male,jhs,married,Pensioner,Akan,Christian,165.6,30,retired,180.8,177.29
+54,female,none,married,Farmer,Akan,Christian,150.8,27.4,employed,171.498,162.876
+49,female,shs,married,Cold store,Akan,Christian,153.3,26.2,employed,168.174,159.108
+20,female,shs,single,Student,Akan,Islam,171.6,28.2,student,173.714,165.388
+45,male,higher,married,Teacher,Akan,Christian,181.5,31.5,employed,192.6,182
+19,male,jhs,single,Self-employed,Akan,Christian,167.5,28,employed,180,171.01
+22,female,higher,single,Student,Akan,Christian,157.7,25.5,student,166.235,156.91
+50,female,jhs,married,Not working,Akan,Christian,151.2,25.6,unemployed,166.512,157.224
+60,female,higher,married,Trader,Others,Christian,160,26.5,employed,169.005,160.05
+60,male,higher,married,Pensioner,Akan,Christian,186,32.5,retired,196.2,185.14
+52,female,shs,married,Trader,Akan,Christian,159,26,employed,167.62,158.48
+59,female,primary,widowed,Trader,Akan,Christian,154.9,27.5,employed,171.775,163.19
+64,female,shs,divorced,Trader,Akan,Christian,150.4,25,employed,164.85,155.34
+56,female,shs,married,Trader,Akan,Christian,154.9,26.5,employed,169.005,160.05
+69,female,none,divorced,Trader,Akan,Christian,156.3,26.5,employed,166.525,160.05
+80,female,none,widowed,Farmer,Akan,Christian,163,27.5,employed,169.775,163.19
+54,male,shs,married,Farmer,Akan,Christian,172,26.5,employed,174.6,166.3
+67,female,higher,divorced,Trader,Akan,Christian,159.8,25.4,employed,162.95,156.596
+48,female,jhs,married,Trader,Akan,Christian,158,25.2,employed,165.404,155.968
+62,male,none,married,Fisherman,Akan,Christian,165,27.5,employed,178.2,169.44
+59,female,jhs,married,Trader,Others,Islam,162.1,27.5,employed,171.775,163.19
+43,male,higher,married,Biomedical scientist,Others,Christian,177.5,30,employed,187.2,177.29
+26,female,higher,single,Nurse,Akan,Christian,166.2,29,employed,175.93,167.9
+23,male,higher,single,Student,Fante,Christian,178,33.5,student,199.8,188.28
+24,male,higher,single,Student,Others,Christian,170.75,28.5,student,181.8,172.58
+18,male,shs,single,Student,Others,Islam,179.6,31,student,190.8,180.43
+26,female,higher,single,NSP,Others,Christian,158.6,27,employed,170.39,161.62
+50,female,jhs,married,Trader,Akan,Christian,165,26.6,employed,169.282,160.364
+52,male,none,married,Farmer,Akan,Christian,157,28,employed,180,171.01
+76,female,none,widowed,Trader,Akan,Christian,158.5,25,employed,161.65,155.34
+73,male,shs,married,Pensioner,Akan,Christian,171,28,retired,174.5,171.01
+51,female,none,divorced,Trader,Akan,Christian,167,27.6,employed,172.052,163.504
+44,male,shs,single,Farmer,Others,Christian,169.9,29.4,employed,185.04,175.406
+50,female,none,married,Not working,Others,Islam,163,28,unemployed,173.16,164.76
+64,female,primary,widowed,Not working,Akan,Christian,159,26.3,unemployed,168.451,159.422
+66,female,higher,widowed,Retired Nurse,Akan,Christian,161.1,28.5,retired,173.025,166.33
+32,male,higher,single,Trader,Akan,Christian,180,30,employed,187.2,177.29
+48,female,jhs,married,Tailor,Akan,Christian,162.5,26,employed,167.62,158.48
+82,female,none,widowed,Not working,Akan,Christian,155.7,27.5,unemployed,169.775,163.19
+71,female,higher,widowed,Trader,Akan,Christian,155,26.5,employed,166.525,160.05
+78,male,shs,married,Farmer,Akan,Christian,168,30.3,employed,181.745,178.232
+80,male,none,divorced,Pensioner,Akan,Christian,170,29,retired,177.65,174.15
+56,female,jhs,married,Trader,Akan,Christian,166,27,employed,170.39,161.62
+65,female,none,widowed,Trader,Akan,Christian,165.5,28.5,employed,173.025,166.33
+65,female,primary,divorced,Farmer,Akan,Christian,161.8,27.5,employed,169.775,163.19
+64,female,none,married,Not working,Akan,Islam,172,28.6,unemployed,174.822,166.644
+61,female,higher,married,Trader,Akan,Christian,162,29.5,employed,177.315,169.47
+51,female,jhs,married,Farmer,Akan,Christian,160,25.5,employed,166.235,156.91
+64,female,higher,divorced,Tailor,Akan,Christian,162,29,employed,175.93,167.9
+36,female,shs,married,Trader,Akan,Christian,160,27.7,employed,172.329,163.818
+62,male,jhs,married,Artisan,Akan,Christian,166,29,employed,183.6,174.15
+46,female,primary,single,Trader,Akan,Christian,164,29.4,employed,177.038,169.156
+62,female,shs,married,Trader,Akan,Christian,160,29.5,employed,177.315,169.47
+75,male,shs,married,Pensioner,Others,Christian,175,32.2,retired,187.73,184.198
+57,female,primary,married,Trader,Akan,Christian,153,24.5,employed,163.465,153.77
+63,female,higher,widowed,Pensioner,Akan,Christian,159,29,retired,175.93,167.9
+52,female,jhs,married,Trader,Akan,Christian,154,25.5,employed,166.235,156.91
+48,female,jhs,married,Trader,Akan,Christian,157,25,employed,164.85,155.34
+59,female,primary,married,Trader,Akan,Christian,167,29,employed,175.93,167.9
+45,female,jhs,married,Trader,Akan,Christian,159,25.7,employed,166.789,157.538
+64,female,jhs,married,Pensioner,Akan,Christian,160.8,27,retired,170.39,161.62
+67,female,higher,married,Pensioner,Akan,Christian,148,25.5,retired,163.275,156.91
+42,female,higher,married,Immigration officer,Akan,Christian,162.5,28,employed,173.16,164.76
+41,female,none,single,Self-employed,Others,Christian,172.5,30,employed,178.7,171.04
+35,male,jhs,married,Driver,Akan,Christian,167.3,27.6,employed,178.56,169.754
+23,female,higher,single,Student,Akan,Christian,156.2,26.5,student,169.005,160.05
+60,female,jhs,divorced,Farmer,Akan,Christian,158.5,27,employed,170.39,161.62
+24,female,higher,single,Teacher,Others,Christian,159,25.6,employed,166.512,157.224
+48,female,jhs,married,Tailor,Akan,Christian,162.5,25.5,employed,166.235,156.91
+31,female,higher,single,Unemployed,Others,Christian,148.6,24,unemployed,162.08,152.2
+55,female,none,married,Trader,Akan,Islam,144.1,24,employed,162.08,152.2
+68,female,primary,widowed,Not working,Akan,Christian,163.9,28.5,unemployed,173.025,166.33
+20,female,shs,single,Student,Akan,Christian,168.9,27.5,student,171.775,163.19
+33,female,higher,married,Teacher,Akan,Christian,168,29,employed,175.93,167.9
+37,female,shs,married,Artisan,Akan,Christian,157.5,29,employed,175.93,167.9
+62,male,jhs,married,Farmer,Akan,Christian,166.3,31.5,employed,192.6,182
+43,female,jhs,divorced,Tailor,Akan,Christian,159,27.3,employed,171.221,162.562
+32,male,higher,single,Driver,Others,Islam,185,32,employed,194.4,183.57
+46,male,shs,married,Trader,Others,Islam,170.8,29.3,employed,184.68,175.092
+30,male,primary,married,Fisherman,Akan,Christian,167,28,employed,180,171.01
+46,female,jhs,married,Hairdresser,Akan,Christian,162.8,28,employed,173.16,164.76
+68,female,higher,widowed,Pensioner,Akan,Christian,149.6,24.3,retired,159.375,153.142
+77,male,shs,married,Pensioner,Akan,Christian,168.8,26,retired,168.2,164.73
+72,female,primary,widowed,Trader,Akan,Christian,161.8,28,employed,171.4,164.76
+52,female,none,married,Trader,Akan,Christian,164,26,employed,167.62,158.48
+65,female,shs,married,Pensioner,Akan,Christian,151,26,retired,164.9,158.48
+77,female,shs,widowed,Trader,Akan,Christian,152,24,employed,158.4,152.2
+51,female,none,married,Not working,Akan,Christian,152.6,25.8,unemployed,167.066,157.852
+54,female,none,married,Farmer,Akan,Christian,152,25.3,employed,165.681,156.282
+62,female,shs,widowed,Tailor,Akan,Christian,153,24.5,employed,163.465,153.77
+83,female,none,married,Not working,Akan,Christian,151,26,unemployed,164.9,158.48
+49,female,jhs,divorced,Trader,Akan,Christian,157,26,employed,167.62,158.48
+38,female,jhs,married,Trader,Akan,Christian,157,28,employed,173.16,164.76
+77,male,jhs,widowed,Self-employed,Akan,Christian,169,31,employed,183.95,180.43
+22,female,higher,single,Student,Akan,Christian,158,27,student,170.39,161.62
+76,male,jhs,married,Pensioner,Akan,Christian,150,28,retired,174.5,171.01
+34,female,higher,married,Teacher,Akan,Christian,155,26,employed,167.62,158.48
+59,male,higher,married,Teacher,Akan,Christian,159,31,employed,190.8,180.43
+41,male,higher,married,Teacher,Akan,Christian,171.5,31,employed,190.8,180.43
+38,female,shs,divorced,Tailor,Akan,Christian,156,27,employed,170.39,161.62
+40,male,shs,married,Trader,Akan,Islam,164.5,28,employed,180,171.01
+35,male,shs,single,Trader,Akan,Christian,174,30,employed,187.2,177.29
+42,female,shs,widowed,Trader,Akan,Christian,154.5,28,employed,173.16,164.76
+33,male,shs,married,Fisherman,Akan,Christian,170,30,employed,187.2,177.29
+34,female,jhs,married,Trader,Akan,Christian,163.5,30,employed,178.7,171.04
+58,female,jhs,married,Unemployed,Akan,Christian,158.5,28,unemployed,173.16,164.76
+27,female,higher,single,Teacher,Others,Christian,169,30,employed,178.7,171.04
+25,male,shs,single,Trader,Akan,Christian,168,30,employed,187.2,177.29
+29,female,higher,single,Trader,Akan,Christian,160,29,employed,175.93,167.9
+39,male,higher,married,Teacher,Akan,Christian,162,28,employed,180,171.01
+29,male,higher,married,Teacher,Akan,Islam,174,31,employed,190.8,180.43
+27,female,shs,married,Tailor,Akan,Islam,154,27,employed,170.39,161.62
+26,male,shs,single,Student,Akan,Christian,159,28,student,180,171.01
+38,female,jhs,married,Hair dresser,Akan,Christian,160,28,employed,173.16,164.76
+44,male,jhs,divorced,Carpenter,Akan,Christian,172.5,32,,194.4,183.57
+67,female,shs,married,Trader,Akan,Christian,157.9,27.5,employed,169.775,163.19
+75,male,higher,married,Pensioner,Akan,Christian,176.1,30,retired,180.8,177.29
+52,female,jhs,divorced,Trader,Akan,Christian,156.6,26,employed,167.62,158.48
+67,female,shs,married,Trader,Akan,Islam,152.3,26.4,employed,166.2,159.736
+42,female,none,divorced,Trader,Akan,Christian,165.5,28,employed,173.16,164.76
+64,female,jhs,married,Farmer,Akan,Christian,170.4,28.8,employed,175.376,167.272
+83,female,primary,widowed,Pensioner,Akan,Christian,156,26,retired,164.9,158.48
+62,female,jhs,widowed,Pensioner,Akan,Islam,161.1,27,retired,170.39,161.62
+82,female,jhs,widowed,Pensioner,Akan,Christian,164.5,28,retired,171.4,164.76
+35,female,jhs,single,Trader,Akan,Christian,157,24.9,employed,164.573,155.026
+55,male,shs,married,Security,Akan,Christian,169.3,28,employed,180,171.01
+29,male,higher,single,Self-employed,Akan,Christian,170.7,27.5,employed,178.2,169.44
+62,female,jhs,widowed,Trader,Akan,Islam,160,26.5,employed,169.005,160.05
+30,male,shs,single,Teacher,Akan,Islam,170,28.5,employed,181.8,172.58
+30,female,jhs,single,Tailor,Akan,Islam,160.8,25,employed,164.85,155.34
+67,female,jhs,widowed,Teacher,Akan,Christian,165.8,25.8,employed,164.25,157.852
+55,female,jhs,divorced,Trader,Akan,Christian,155.9,25.6,employed,166.512,157.224
+60,female,primary,widowed,Farmer,Akan,Christian,154.5,27,employed,170.39,161.62
+35,female,none,single,Trader,Akan,Christian,150.3,25,employed,164.85,155.34
+51,female,none,single,Cleaner,Others,Christian,164.5,27.5,employed,171.775,163.19
+32,female,shs,single,Tailor,Akan,Christian,157.5,27,employed,170.39,161.62
+40,female,jhs,divorced,Trader,Akan,Christian,148.2,25.5,employed,166.235,156.91
+43,female,jhs,single,Trader,Akan,Christian,161.1,28.5,employed,174.545,166.33
+44,female,none,divorced,Trader,Akan,Christian,161,27.5,employed,171.775,163.19
+50,female,none,married,Not working,Akan,Christian,147,23.5,unemployed,160.695,150.63
+45,male,shs,married,Trader,Akan,Christian,190,29.5,employed,185.4,175.72
+65,male,higher,divorced,Pensioner,Akan,Christian,174.5,29.5,retired,179.225,175.72
+24,female,shs,single,Fire service officer,Akan,Christian,164,28.4,employed,174.268,166.016
+18,male,shs,single,Student,Akan,Christian,165.5,28,student,180,171.01
+50,male,jhs,married,Driver,Akan,Christian,165.6,29,employed,183.6,174.15
+33,female,jhs,single,Self-employed,Akan,Christian,163.9,27,employed,170.39,161.62
+32,male,shs,married,Self-employed,Akan,Christian,188,32,employed,194.4,183.57
+36,male,higher,married,Nurse,Akan,Islam,173.4,30,employed,187.2,177.29
+38,male,none,single,Trader,Akan,Christian,166.5,26,employed,172.8,164.73
+21,male,higher,single,Student,Akan,Christian,176.4,31,student,190.8,180.43
+34,male,higher,single,Medical Doctor,Others,Islam,177.2,29,employed,183.6,174.15
+22,male,higher,single,Student,Akan,Christian,178.8,28.5,student,181.8,172.58
+28,female,shs,single,Tailor,Akan,Christian,160,27,employed,170.39,161.62
+59,female,jhs,married,Farmer,Akan,Christian,142.8,24,employed,162.08,152.2
+48,female,jhs,divorced,Trader,Akan,Christian,159,28,employed,173.16,164.76
+53,female,jhs,divorced,Trader,Akan,Islam,167.2,29,employed,175.93,167.9
+57,female,shs,widowed,Cook,Akan,Christian,162.2,27.4,employed,171.498,162.876
+60,female,none,widowed,Farmer,Akan,Islam,158,27,employed,170.39,161.62
+60,female,none,married,Not working,Akan,Christian,157,29,unemployed,175.93,167.9
+71,male,jhs,married,Farmer,Akan,Christian,152.3,26,employed,168.2,164.73
+68,female,primary,widowed,Not working,Akan,Christian,164.8,28.5,unemployed,173.025,166.33
+63,female,none,married,Trader,Akan,Christian,153,28,employed,173.16,164.76
+72,female,primary,widowed,Not working,Akan,Christian,165.5,28,unemployed,171.4,164.76
+67,female,jhs,widowed,Not working,Akan,Christian,161,26,unemployed,164.9,158.48
+65,male,higher,married,Driver,Akan,Islam,166.6,28.3,employed,175.445,171.952
+66,male,jhs,married,Pensioner,Akan,Christian,169.4,28,retired,174.5,171.01
+70,female,jhs,married,Farmer,Akan,Christian,148,26.5,employed,166.525,160.05
+28,female,jhs,single,Tailor,Akan,Christian,157,25,employed,164.85,155.34
+65,female,jhs,married,Not working,Akan,Christian,159,27.5,unemployed,169.775,163.19
+84,female,none,widowed,Not working,Akan,Christian,159.5,26,unemployed,164.9,158.48
+70,female,jhs,divorced,Farmer,Akan,Christian,151.5,25,employed,161.65,155.34
+68,female,none,married,Trader,Akan,Islam,165.5,26.5,employed,166.525,160.05
+48,female,primary,married,Not working,Akan,Christian,158.9,26.2,unemployed,168.174,159.108
+76,male,higher,married,Pensioner,Akan,Christian,162.7,27,retired,171.35,167.87
+69,female,shs,widowed,Trader,Akan,Christian,148,23.6,employed,157.1,150.944
+64,male,shs,widowed,Pensioner,Akan,Islam,164.8,29,retired,183.6,174.15
+90,female,primary,widowed,Farmer,Akan,Christian,147,25.5,employed,163.275,156.91
+80,female,shs,widowed,Not working,Akan,Christian,160.5,27.5,unemployed,169.775,163.19
+47,male,none,married,Trader,Akan,Islam,173,29,employed,183.6,174.15
+70,female,primary,widowed,Trader,Akan,Christian,158,27,employed,168.15,161.62
+28,female,jhs,single,Tailor,Akan,Christian,157,25,employed,164.85,155.34
+74,female,jhs,widowed,Pensioner,Akan,Christian,159.5,26.5,retired,166.525,160.05
+69,male,higher,married,Pensioner,Akan,Christian,176,30.5,retired,182.375,178.86
+63,female,jhs,married,Farmer,Akan,Christian,164.7,26.5,employed,169.005,160.05
+59,male,jhs,married,Farmer,Akan,Christian,168.1,29,employed,183.6,174.15
+59,female,jhs,married,Trader,Akan,Christian,166,27.5,employed,171.775,163.19
+65,female,higher,married,Pensioner,Akan,Christian,165,28.5,retired,173.025,166.33
+60,female,none,married,Trader,Akan,Islam,165,27,employed,170.39,161.62
+69,male,higher,married,Pensioner,Akan,Christian,168.1,27.5,retired,172.925,169.44
+75,female,shs,divorced,Not working,Akan,Christian,156,27,unemployed,168.15,161.62
+36,male,higher,married,Nurse,Akan,Christian,173.2,27,employed,176.4,167.87
+19,male,higher,single,Student,Akan,Christian,175.6,29,student,183.6,174.15
+68,male,jhs,married,Farmer,Akan,Islam,158,25.8,employed,167.57,164.102
+63,female,none,married,Trader,Akan,Christian,156.1,25.6,employed,166.512,157.224
+32,female,jhs,single,Trader,Akan,Islam,154.5,26.5,employed,169.005,160.05
+33,male,higher,single,Nurse,Akan,Christian,184.1,29.5,employed,185.4,175.72
+29,male,higher,single,Self-employed,Akan,Christian,174,28.5,employed,181.8,172.58
+67,female,shs,married,Pensioner,Akan,Christian,157,26,retired,164.9,158.48
+72,female,higher,widowed,Not working,Akan,Christian,153.6,23.2,unemployed,155.8,149.688
+43,female,jhs,married,Self-employed,Akan,Christian,156.3,26,employed,167.62,158.48
+45,female,jhs,widowed,Trader,Akan,Christian,157.5,24.5,employed,163.465,153.77
+63,female,none,widowed,Farmer,Akan,Christian,162.5,29.5,employed,177.315,169.47
+48,female,none,married,Trader,Akan,Christian,161.5,26.3,employed,168.451,159.422
+42,female,jhs,married,Trader,Akan,Christian,160.2,26,employed,167.62,158.48
+63,female,shs,widowed,Pensioner,Akan,Christian,156,27.5,retired,171.775,163.19
+53,male,shs,married,Security,Akan,Christian,165.9,26.5,employed,174.6,166.3
+25,female,jhs,single,Trader,Akan,Christian,164.5,27.4,employed,171.498,162.876
+56,female,none,widowed,Trader,Akan,Christian,155.9,25.5,employed,166.235,156.91
+40,female,primary,married,Trader,Akan,Christian,165,27,employed,170.39,161.62
+61,female,jhs,widowed,Trader,Akan,Islam,160.5,27,employed,170.39,161.62
+50,female,primary,single,Trader,Akan,Christian,145.1,24.3,employed,162.911,153.142
+42,female,none,divorced,Trader,Akan,Christian,159.9,26.4,employed,168.728,159.736
+55,female,shs,divorced,Trader,Akan,Christian,161.5,27,employed,170.39,161.62
+47,female,none,divorced,Trader,Akan,Christian,152,25.4,employed,165.958,156.596
+46,male,shs,married,Mechanic,Akan,Christian,166.7,27.5,employed,178.2,169.44
+46,female,jhs,divorced,Trader,Akan,Christian,156.6,26,employed,167.62,158.48

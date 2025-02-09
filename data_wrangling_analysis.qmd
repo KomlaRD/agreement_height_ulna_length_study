@@ -390,9 +390,9 @@ export(height_ml, here("data", "height_prediction.csv"))
 ```
 
 ```{r linear-models}
-model1 <- lm(mean_height ~ mean_ulna, data = height_ml)
-model2 <- lm(mean_height ~ mean_ulna + gender, data = height_ml)
-model3 <- lm(mean_height ~ mean_ulna + gender + age, data = height_ml)
+model1 <- lm(mean_height ~ mean_ulna, data = df)
+model2 <- lm(mean_height ~ mean_ulna + gender, data = df)
+model3 <- lm(mean_height ~ mean_ulna + gender + age, data = df)
 ```
 
 ```{r summary-models}
